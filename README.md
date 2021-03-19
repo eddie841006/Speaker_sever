@@ -104,7 +104,7 @@ for name in speaker:
         wave_dict[name] = path_list
 
 # save dict to json
-with open('morning_speaker_dcit.json', 'w', encoding='utf-8') as fp:
+with open('morning_speaker_dcit.json', 'w', encodinTable of Contentsg='utf-8') as fp:
     # ensure_ascii -> True:中文將儲存為ascii碼 ; False:可儲存中文
     json.dump(wave_dict, fp, ensure_ascii=False, indent=4)
 
